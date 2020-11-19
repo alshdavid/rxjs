@@ -4,13 +4,11 @@
 /stdom
 /testing
 /typings
+/junit.xml
+/index.js
+/index.d.ts
 
 !/src/**/*
-
-*.js
-*.d.ts
-*.gz
-*.br
 
 # Logs
 logs
@@ -55,8 +53,6 @@ build/Release
 node_modules/
 jspm_packages/
 
-# TypeScript v1 declaration files
-typings/
 
 # TypeScript cache
 *.tsbuildinfo

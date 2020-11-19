@@ -1,3 +1,5 @@
+// I don't know if this works
+
 import * as rxjs from 'rxjs';
 import { Observable } from '../rxjs/observable';
 import { Subject } from '../rxjs/subject';
@@ -11,8 +13,8 @@ import { combineLatest } from '../rxjs/combine-latest';
 (BehaviorSubject as any) = rxjs.BehaviorSubject;
 (combineLatest as any) = rxjs.combineLatest;
 
-import '../observable.spec';
-import '../subject.spec';
-import '../replay-subject.spec';
-import '../behavior-subject.spec';
-import '../combine-latest.spec';
+import '../rxjs/observable.spec';
+import '../rxjs/subject.spec';
+import '../rxjs/replay-subject.spec';
+import '../rxjs/behavior-subject.spec';
+import '../rxjs/combine-latest.spec';

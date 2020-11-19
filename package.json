@@ -5,7 +5,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-
+    "build": "npm run clean && npx tsc -p ./tsconfig.build.json",
+    "clean": "node ./clean.js",
+    "test": "npx jest ./src"
   },
   "optionalDependencies": {
     "rxjs": "^6.6.3"
