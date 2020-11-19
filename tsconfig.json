@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "preserveWatchOutput": true,
+    "target": "es6",
+    "module": "ESNext",
+    "declaration": true,
+    "outDir": ".",
+    "declarationDir": ".",
+    "strict": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": "./",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "jest.config.js",
+    "**/*.d.ts",
+    "**/*.js"
+  ]
+}
