@@ -1,13 +1,34 @@
 {
   "name": "@alshdavid/rxjs",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "author": "David Alsh",
-  "main": "index.js",
   "types": "index.d.ts",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "module": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./operators": {
+      "module": "./operators/index.mjs",
+      "require": "./operators/index.js"
+    },
+    "./rxjs": {
+      "module": "./rxjs/index.mjs",
+      "require": "./rxjs/index.js"
+    },
+    "./rxjs-compat": {
+      "module": "./rxjs-compat/index.mjs",
+      "require": "./rxjs-compat/index.js"
+    },
+    "./package.json": "./package.json",
+    "./": "./"
+  },
   "scripts": {
-    "build": "npm run clean && npx tsc -p ./tsconfig.build.json",
-    "clean": "node ./clean.js",
-    "test": "npx jest ./src"
+    "build": "make",
+    "clean": "make clean",
+    "test": "make test"
   },
   "optionalDependencies": {
     "rxjs": "^6.6.3"
@@ -19,6 +40,8 @@
     "rxjs": "^6.6.3",
     "ts-jest": "^26.4.4",
     "tslint": "^6.1.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "rollup": "^2.33.3",
+    "rollup-plugin-typescript2": "^0.29.0"
   }
 }

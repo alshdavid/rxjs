@@ -1,14 +1,5 @@
-/operators
-/rxjs
-/rxjs-compat
-/stdom
-/testing
-/typings
-/junit.xml
-/index.js
-/index.d.ts
+/dist
 
-!/src/**/*
 
 # Logs
 logs

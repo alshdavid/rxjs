@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="164" failures="0" errors="0" time="12.781">
+  <testsuite name="filter" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.16" tests="4">
+    <testcase classname="filter Factory Should not throw" name="filter Factory Should not throw" time="0.002">
+    </testcase>
+    <testcase classname="filter OperatorFunc Should pass operation value to predicate" name="filter OperatorFunc Should pass operation value to predicate" time="0.003">
+    </testcase>
+    <testcase classname="filter OperatorFunc Should allow values that satisfy predicate" name="filter OperatorFunc Should allow values that satisfy predicate" time="0.001">
+    </testcase>
+    <testcase classname="filter OperatorFunc Should skip values that don&apos;t satisfy predicate" name="filter OperatorFunc Should skip values that don&apos;t satisfy predicate" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="fromEvent" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.167" tests="5">
+    <testcase classname="fromEvent Should not throw" name="fromEvent Should not throw" time="0.003">
+    </testcase>
+    <testcase classname="fromEvent Should wait for subscription before listening" name="fromEvent Should wait for subscription before listening" time="0.001">
+    </testcase>
+    <testcase classname="fromEvent Should listen to events after subscription" name="fromEvent Should listen to events after subscription" time="0.001">
+    </testcase>
+    <testcase classname="fromEvent Should stop listening to events after unsubscription" name="fromEvent Should stop listening to events after unsubscription" time="0">
+    </testcase>
+    <testcase classname="fromEvent Should emit value to subscriber" name="fromEvent Should emit value to subscriber" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="first" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.195" tests="6">
+    <testcase classname="first Factory Should not throw" name="first Factory Should not throw" time="0.002">
+    </testcase>
+    <testcase classname="first Factory Should not throw with argument" name="first Factory Should not throw with argument" time="0">
+    </testcase>
+    <testcase classname="first OperatorFunc Should complete if no condition is supplied" name="first OperatorFunc Should complete if no condition is supplied" time="0.001">
+    </testcase>
+    <testcase classname="first OperatorFunc Should find first event with condition" name="first OperatorFunc Should find first event with condition" time="0">
+    </testcase>
+    <testcase classname="first OperatorFunc Should skip if condition is unmet" name="first OperatorFunc Should skip if condition is unmet" time="0.001">
+    </testcase>
+    <testcase classname="first OperatorFunc Should pass operation value to predicate" name="first OperatorFunc Should pass operation value to predicate" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="BehaviorSubject" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.191" tests="6">
+    <testcase classname="BehaviorSubject constructor Should construct without throwing" name="BehaviorSubject constructor Should construct without throwing" time="0.002">
+    </testcase>
+    <testcase classname="BehaviorSubject subscribe Should not throw without optional arguments" name="BehaviorSubject subscribe Should not throw without optional arguments" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject subscribe Should emit to subscribers" name="BehaviorSubject subscribe Should emit to subscribers" time="0.003">
+    </testcase>
+    <testcase classname="BehaviorSubject next Should update value emitted to subscribers" name="BehaviorSubject next Should update value emitted to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="BehaviorSubject getValue Should get initial value" name="BehaviorSubject getValue Should get initial value" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject getValue Should get last value" name="BehaviorSubject getValue Should get last value" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="merge" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.195" tests="5">
+    <testcase classname="merge Should not throw" name="merge Should not throw" time="0.003">
+    </testcase>
+    <testcase classname="merge Should return observable" name="merge Should return observable" time="0.001">
+    </testcase>
+    <testcase classname="merge Should merge events from sources (also types)" name="merge Should merge events from sources (also types)" time="0.002">
+    </testcase>
+    <testcase classname="merge Should emit error when one source errors" name="merge Should emit error when one source errors" time="0">
+    </testcase>
+    <testcase classname="merge Should complete when one source completes" name="merge Should complete when one source completes" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="ReplaySubject" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.191" tests="5">
+    <testcase classname="ReplaySubject constructor Should construct without throwing" name="ReplaySubject constructor Should construct without throwing" time="0.001">
+    </testcase>
+    <testcase classname="ReplaySubject constructor Should construct without throwing" name="ReplaySubject constructor Should construct without throwing" time="0.001">
+    </testcase>
+    <testcase classname="ReplaySubject subscribe Should not throw without optional arguments" name="ReplaySubject subscribe Should not throw without optional arguments" time="0">
+    </testcase>
+    <testcase classname="ReplaySubject subscribe Should emit buffered values" name="ReplaySubject subscribe Should emit buffered values" time="0.003">
+    </testcase>
+    <testcase classname="ReplaySubject subscribe Should emit limited buffered values" name="ReplaySubject subscribe Should emit limited buffered values" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Subject" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.212" tests="16">
+    <testcase classname="Subject constructor Should construct without throwing" name="Subject constructor Should construct without throwing" time="0.002">
+    </testcase>
+    <testcase classname="Subject subscribe Should not throw without optional arguments" name="Subject subscribe Should not throw without optional arguments" time="0">
+    </testcase>
+    <testcase classname="Subject next Should emit to subscribers" name="Subject next Should emit to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Subject next Should emit value to subscribers" name="Subject next Should emit value to subscribers" time="0.002">
+    </testcase>
+    <testcase classname="Subject next Should emit values to subscribers" name="Subject next Should emit values to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Subject error Should emit error to subscribers" name="Subject error Should emit error to subscribers" time="0">
+    </testcase>
+    <testcase classname="Subject error Should emit error value to subscribers" name="Subject error Should emit error value to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Subject error Should not send values to subscribers after error" name="Subject error Should not send values to subscribers after error" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not send values to subscribers after complete" name="Subject complete Should not send values to subscribers after complete" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not send error to subscribers after complete" name="Subject complete Should not send error to subscribers after complete" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not send run complete to subscribers after complete" name="Subject complete Should not send run complete to subscribers after complete" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not emit to subscribers if complete before new subscription" name="Subject complete Should not emit to subscribers if complete before new subscription" time="0.001">
+    </testcase>
+    <testcase classname="Subject asObservable Should produce an observable from an alt subscriber" name="Subject asObservable Should produce an observable from an alt subscriber" time="0">
+    </testcase>
+    <testcase classname="Subject asObservable Should emit value produced from alt subscriber" name="Subject asObservable Should emit value produced from alt subscriber" time="0.001">
+    </testcase>
+    <testcase classname="Subject asObservable Should emit error produced from alt subscriber" name="Subject asObservable Should emit error produced from alt subscriber" time="0.001">
+    </testcase>
+    <testcase classname="Subject asObservable Should emit complete produced from alt subscriber" name="Subject asObservable Should emit complete produced from alt subscriber" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Observable" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.285" tests="26">
+    <testcase classname="Observable constructor Should construct without throwing" name="Observable constructor Should construct without throwing" time="0.003">
+    </testcase>
+    <testcase classname="Observable constructor Should not run setup function when there are no subscribers" name="Observable constructor Should not run setup function when there are no subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Observable constructor Should not run teardown function when there are no subscribers" name="Observable constructor Should not run teardown function when there are no subscribers" time="0">
+    </testcase>
+    <testcase classname="Observable subscribe Should run setup function when a new subscriber joins" name="Observable subscribe Should run setup function when a new subscriber joins" time="0.001">
+    </testcase>
+    <testcase classname="Observable subscribe Should run setup function each time a new subscriber joins" name="Observable subscribe Should run setup function each time a new subscriber joins" time="0">
+    </testcase>
+    <testcase classname="Observable subscribe Should run teardown function when a subscriber unsubscribes" name="Observable subscribe Should run teardown function when a subscriber unsubscribes" time="0">
+    </testcase>
+    <testcase classname="Observable subscribe Should run teardown function each time a subscriber unsubscribes" name="Observable subscribe Should run teardown function each time a subscriber unsubscribes" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit value to each new subscriber" name="Observable next Should emit value to each new subscriber" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit a value when the next is triggered" name="Observable next Should emit a value when the next is triggered" time="0">
+    </testcase>
+    <testcase classname="Observable next Should not emit when a subscriber unsubscribes" name="Observable next Should not emit when a subscriber unsubscribes" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit a value when the next is triggered multiple times" name="Observable next Should emit a value when the next is triggered multiple times" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit values to subscribers" name="Observable next Should emit values to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit values to each subscriber separately" name="Observable next Should emit values to each subscriber separately" time="0.001">
+    </testcase>
+    <testcase classname="Observable error Should emit error to each new subscriber" name="Observable error Should emit error to each new subscriber" time="0.001">
+    </testcase>
+    <testcase classname="Observable error Should emit a error when the error is triggered" name="Observable error Should emit a error when the error is triggered" time="0.011">
+    </testcase>
+    <testcase classname="Observable error Should not emit errors after a subscriber has unsubscribed" name="Observable error Should not emit errors after a subscriber has unsubscribed" time="0.001">
+    </testcase>
+    <testcase classname="Observable error Should complete when the error is triggered" name="Observable error Should complete when the error is triggered" time="0">
+    </testcase>
+    <testcase classname="Observable error Should emit errors to subscribers" name="Observable error Should emit errors to subscribers" time="0">
+    </testcase>
+    <testcase classname="Observable error Should emit errors to each subscriber separately" name="Observable error Should emit errors to each subscriber separately" time="0.001">
+    </testcase>
+    <testcase classname="Observable complete Should notify upon completion" name="Observable complete Should notify upon completion" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should not emit after completion" name="Observable complete Should not emit after completion" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should run teardown after completion" name="Observable complete Should run teardown after completion" time="0.001">
+    </testcase>
+    <testcase classname="Observable complete Should only complete once" name="Observable complete Should only complete once" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should only run teardown once" name="Observable complete Should only run teardown once" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should only run teardown once" name="Observable complete Should only run teardown once" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should complete for each subscriber separately" name="Observable complete Should complete for each subscriber separately" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="pipe" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.375" tests="11">
+    <testcase classname="pipe factory Should run without throwing" name="pipe factory Should run without throwing" time="0.002">
+    </testcase>
+    <testcase classname="pipe factory Should return a function" name="pipe factory Should return a function" time="0.001">
+    </testcase>
+    <testcase classname="pipe pipe function Should return an Observable" name="pipe pipe function Should return an Observable" time="0.001">
+    </testcase>
+    <testcase classname="pipe pipe function Should produce an operation to pipe callbacks" name="pipe pipe function Should produce an operation to pipe callbacks" time="0.001">
+    </testcase>
+    <testcase classname="pipe pipe function Should forward error" name="pipe pipe function Should forward error" time="0.002">
+    </testcase>
+    <testcase classname="pipe pipe function Should forward complete" name="pipe pipe function Should forward complete" time="0">
+    </testcase>
+    <testcase classname="pipe pipe function Should emit value provided in operation" name="pipe pipe function Should emit value provided in operation" time="0.001">
+    </testcase>
+    <testcase classname="pipe pipe function Should skip value provided in skipped operation" name="pipe pipe function Should skip value provided in skipped operation" time="0">
+    </testcase>
+    <testcase classname="pipe pipe function Should complete value provided in complete operation" name="pipe pipe function Should complete value provided in complete operation" time="0">
+    </testcase>
+    <testcase classname="pipe pipe function Should capture thrown value and forward it as error" name="pipe pipe function Should capture thrown value and forward it as error" time="0.001">
+    </testcase>
+    <testcase classname="pipe pipe function Should wait for promises to resolve in operators" name="pipe pipe function Should wait for promises to resolve in operators" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="Channel" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.167" tests="3">
+    <testcase classname="Channel Should construct without throwing" name="Channel Should construct without throwing" time="0">
+    </testcase>
+    <testcase classname="Channel Should call action of unsubscriber" name="Channel Should call action of unsubscriber" time="0">
+    </testcase>
+    <testcase classname="Channel Should call action of multiple unsubscribers" name="Channel Should call action of multiple unsubscribers" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="map" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.194" tests="3">
+    <testcase classname="map Factory Should not throw" name="map Factory Should not throw" time="0.001">
+    </testcase>
+    <testcase classname="map OperatorFunc Should modify value" name="map OperatorFunc Should modify value" time="0">
+    </testcase>
+    <testcase classname="map OperatorFunc Should pass operation value" name="map OperatorFunc Should pass operation value" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="tap" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.203" tests="4">
+    <testcase classname="tap Factory Should not throw" name="tap Factory Should not throw" time="0">
+    </testcase>
+    <testcase classname="tap OperatorFunc Should not modify value" name="tap OperatorFunc Should not modify value" time="0.001">
+    </testcase>
+    <testcase classname="tap OperatorFunc Should run callback" name="tap OperatorFunc Should run callback" time="0">
+    </testcase>
+    <testcase classname="tap OperatorFunc Should pass operation value to predicate" name="tap OperatorFunc Should pass operation value to predicate" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="lastValueFrom" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.202" tests="4">
+    <testcase classname="lastValueFrom Should notify upon completion" name="lastValueFrom Should notify upon completion" time="0.002">
+    </testcase>
+    <testcase classname="lastValueFrom Should catch upon error" name="lastValueFrom Should catch upon error" time="0">
+    </testcase>
+    <testcase classname="lastValueFrom Should resolve if complete before value emit" name="lastValueFrom Should resolve if complete before value emit" time="0">
+    </testcase>
+    <testcase classname="lastValueFrom Should unsubscribe immediately" name="lastValueFrom Should unsubscribe immediately" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="of" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.207" tests="3">
+    <testcase classname="of Should not throw" name="of Should not throw" time="0.001">
+    </testcase>
+    <testcase classname="of Should return observable" name="of Should return observable" time="0">
+    </testcase>
+    <testcase classname="of Should provide values to observable" name="of Should provide values to observable" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="lastValueFrom" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.203" tests="2">
+    <testcase classname="lastValueFrom Should notify upon completion" name="lastValueFrom Should notify upon completion" time="0.001">
+    </testcase>
+    <testcase classname="lastValueFrom Should catch upon error" name="lastValueFrom Should catch upon error" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="combineLatest" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:57" time="0.21" tests="2">
+    <testcase classname="combineLatest Should not throw" name="combineLatest Should not throw" time="0.001">
+    </testcase>
+    <testcase classname="combineLatest Should emit only when every observable has emit at least once" name="combineLatest Should emit only when every observable has emit at least once" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="toObservable" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.724" tests="4">
+    <testcase classname="toObservable Should produce an observable from an alt subscriber" name="toObservable Should produce an observable from an alt subscriber" time="0.002">
+    </testcase>
+    <testcase classname="toObservable Should emit value produced from alt subscriber" name="toObservable Should emit value produced from alt subscriber" time="0.002">
+    </testcase>
+    <testcase classname="toObservable Should emit error produced from alt subscriber" name="toObservable Should emit error produced from alt subscriber" time="0.001">
+    </testcase>
+    <testcase classname="toObservable Should emit complete produced from alt subscriber" name="toObservable Should emit complete produced from alt subscriber" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Observable" errors="0" failures="0" skipped="0" timestamp="2020-11-28T02:27:51" time="5.827" tests="55">
+    <testcase classname="Observable constructor Should construct without throwing" name="Observable constructor Should construct without throwing" time="0.002">
+    </testcase>
+    <testcase classname="Observable constructor Should not run setup function when there are no subscribers" name="Observable constructor Should not run setup function when there are no subscribers" time="0">
+    </testcase>
+    <testcase classname="Observable constructor Should not run teardown function when there are no subscribers" name="Observable constructor Should not run teardown function when there are no subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Observable subscribe Should run setup function when a new subscriber joins" name="Observable subscribe Should run setup function when a new subscriber joins" time="0.001">
+    </testcase>
+    <testcase classname="Observable subscribe Should run setup function each time a new subscriber joins" name="Observable subscribe Should run setup function each time a new subscriber joins" time="0">
+    </testcase>
+    <testcase classname="Observable subscribe Should run teardown function when a subscriber unsubscribes" name="Observable subscribe Should run teardown function when a subscriber unsubscribes" time="0">
+    </testcase>
+    <testcase classname="Observable subscribe Should run teardown function each time a subscriber unsubscribes" name="Observable subscribe Should run teardown function each time a subscriber unsubscribes" time="0">
+    </testcase>
+    <testcase classname="Observable next Should emit value to each new subscriber" name="Observable next Should emit value to each new subscriber" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit a value when the next is triggered" name="Observable next Should emit a value when the next is triggered" time="0">
+    </testcase>
+    <testcase classname="Observable next Should not emit when a subscriber unsubscribes" name="Observable next Should not emit when a subscriber unsubscribes" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit a value when the next is triggered multiple times" name="Observable next Should emit a value when the next is triggered multiple times" time="0">
+    </testcase>
+    <testcase classname="Observable next Should emit values to subscribers" name="Observable next Should emit values to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Observable next Should emit values to each subscriber separately" name="Observable next Should emit values to each subscriber separately" time="0.001">
+    </testcase>
+    <testcase classname="Observable error Should emit error to each new subscriber" name="Observable error Should emit error to each new subscriber" time="0.001">
+    </testcase>
+    <testcase classname="Observable error Should emit a error when the error is triggered" name="Observable error Should emit a error when the error is triggered" time="0">
+    </testcase>
+    <testcase classname="Observable error Should not emit errors after a subscriber has unsubscribed" name="Observable error Should not emit errors after a subscriber has unsubscribed" time="0">
+    </testcase>
+    <testcase classname="Observable error Should complete when the error is triggered" name="Observable error Should complete when the error is triggered" time="0">
+    </testcase>
+    <testcase classname="Observable error Should emit errors to subscribers" name="Observable error Should emit errors to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Observable error Should emit errors to each subscriber separately" name="Observable error Should emit errors to each subscriber separately" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should notify upon completion" name="Observable complete Should notify upon completion" time="0.001">
+    </testcase>
+    <testcase classname="Observable complete Should not emit after completion" name="Observable complete Should not emit after completion" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should run teardown after completion" name="Observable complete Should run teardown after completion" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should only complete once" name="Observable complete Should only complete once" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should only run teardown once" name="Observable complete Should only run teardown once" time="0">
+    </testcase>
+    <testcase classname="Observable complete Should only run teardown once" name="Observable complete Should only run teardown once" time="0.001">
+    </testcase>
+    <testcase classname="Observable complete Should complete for each subscriber separately" name="Observable complete Should complete for each subscriber separately" time="0">
+    </testcase>
+    <testcase classname="Subject constructor Should construct without throwing" name="Subject constructor Should construct without throwing" time="0">
+    </testcase>
+    <testcase classname="Subject subscribe Should not throw without optional arguments" name="Subject subscribe Should not throw without optional arguments" time="0">
+    </testcase>
+    <testcase classname="Subject next Should emit to subscribers" name="Subject next Should emit to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Subject next Should emit value to subscribers" name="Subject next Should emit value to subscribers" time="0">
+    </testcase>
+    <testcase classname="Subject next Should emit values to subscribers" name="Subject next Should emit values to subscribers" time="0">
+    </testcase>
+    <testcase classname="Subject error Should emit error to subscribers" name="Subject error Should emit error to subscribers" time="0">
+    </testcase>
+    <testcase classname="Subject error Should emit error value to subscribers" name="Subject error Should emit error value to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="Subject error Should not send values to subscribers after error" name="Subject error Should not send values to subscribers after error" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not send values to subscribers after complete" name="Subject complete Should not send values to subscribers after complete" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not send error to subscribers after complete" name="Subject complete Should not send error to subscribers after complete" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not send run complete to subscribers after complete" name="Subject complete Should not send run complete to subscribers after complete" time="0">
+    </testcase>
+    <testcase classname="Subject complete Should not emit to subscribers if complete before new subscription" name="Subject complete Should not emit to subscribers if complete before new subscription" time="0.001">
+    </testcase>
+    <testcase classname="Subject asObservable Should produce an observable from an alt subscriber" name="Subject asObservable Should produce an observable from an alt subscriber" time="0">
+    </testcase>
+    <testcase classname="Subject asObservable Should emit value produced from alt subscriber" name="Subject asObservable Should emit value produced from alt subscriber" time="0">
+    </testcase>
+    <testcase classname="Subject asObservable Should emit error produced from alt subscriber" name="Subject asObservable Should emit error produced from alt subscriber" time="0">
+    </testcase>
+    <testcase classname="Subject asObservable Should emit complete produced from alt subscriber" name="Subject asObservable Should emit complete produced from alt subscriber" time="0.001">
+    </testcase>
+    <testcase classname="ReplaySubject constructor Should construct without throwing" name="ReplaySubject constructor Should construct without throwing" time="0">
+    </testcase>
+    <testcase classname="ReplaySubject constructor Should construct without throwing" name="ReplaySubject constructor Should construct without throwing" time="0">
+    </testcase>
+    <testcase classname="ReplaySubject subscribe Should not throw without optional arguments" name="ReplaySubject subscribe Should not throw without optional arguments" time="0">
+    </testcase>
+    <testcase classname="ReplaySubject subscribe Should emit buffered values" name="ReplaySubject subscribe Should emit buffered values" time="0.001">
+    </testcase>
+    <testcase classname="ReplaySubject subscribe Should emit limited buffered values" name="ReplaySubject subscribe Should emit limited buffered values" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject constructor Should construct without throwing" name="BehaviorSubject constructor Should construct without throwing" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject subscribe Should not throw without optional arguments" name="BehaviorSubject subscribe Should not throw without optional arguments" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject subscribe Should emit to subscribers" name="BehaviorSubject subscribe Should emit to subscribers" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject next Should update value emitted to subscribers" name="BehaviorSubject next Should update value emitted to subscribers" time="0.001">
+    </testcase>
+    <testcase classname="BehaviorSubject getValue Should get initial value" name="BehaviorSubject getValue Should get initial value" time="0">
+    </testcase>
+    <testcase classname="BehaviorSubject getValue Should get last value" name="BehaviorSubject getValue Should get last value" time="0">
+    </testcase>
+    <testcase classname="combineLatest Should not throw" name="combineLatest Should not throw" time="0">
+    </testcase>
+    <testcase classname="combineLatest Should emit only when every observable has emit at least once" name="combineLatest Should emit only when every observable has emit at least once" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
