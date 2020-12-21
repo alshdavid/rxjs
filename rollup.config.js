@@ -1,5 +1,4 @@
 const typescript = require('rollup-plugin-typescript2')
-const { terser } = require('rollup-plugin-terser')
 
 const base = (input, outputDir, extension, format) => ({
   input,
@@ -29,14 +28,6 @@ const base = (input, outputDir, extension, format) => ({
     typescript({ 
       tsconfig: 'tsconfig.build.json',
       useTsconfigDeclarationDir: true
-    }),
-    terser({
-      mangle: {
-        properties: {
-          
-          regex: /^_/
-        },
-      },
     }),
   ],
 })
