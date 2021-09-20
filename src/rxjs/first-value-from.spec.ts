@@ -49,15 +49,19 @@ describe('lastValueFrom', () => {
     expect(didThrow).toBeTruthy();
   });
 
-  it('Should resolve if complete before value emit', async () => {
+  it('Should throw if complete before value emit', async () => {
     const subject = new Subject<string>();
     const onValue = firstValueFrom<string>(subject);
 
     subject.complete();
 
-    const value = await onValue;
+    try {
+      await onValue;
+      throw new Error()
+    } catch (error) {
+      expect(error instanceof Error).toBe(true);
+    }
 
-    expect(value).toBe(undefined);
   });
 
   it('Should unsubscribe immediately', async () => {

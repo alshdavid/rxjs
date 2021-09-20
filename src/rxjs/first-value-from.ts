@@ -1,7 +1,7 @@
 import { Subscriber } from './observable';
 import { Unsubscriber } from './subscription';
 
-export const firstValueFrom = async <T>(source: Subscriber<T>): Promise<T | undefined> => {
+export const firstValueFrom = async <T>(source: Subscriber<T>): Promise<T> => {
   let done = false;
   let sub: Unsubscriber | undefined;
 
@@ -13,7 +13,9 @@ export const firstValueFrom = async <T>(source: Subscriber<T>): Promise<T | unde
       },
       (error) => reject(error),
       () => {
-        if (!done) resolve();
+        if (!done) {
+          reject(new Error('Completed before value arrived'))    
+        }
       },
     );
   });

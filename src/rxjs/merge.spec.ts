@@ -55,7 +55,7 @@ describe('merge', () => {
     expect(error).toBeCalledTimes(1);
   });
 
-  it('Should complete when one source completes', () => {
+  it('Should complete when all sources completes', () => {
     const result = merge(a$, b$);
 
     result.subscribe(subscribe, undefined, complete);
@@ -63,7 +63,11 @@ describe('merge', () => {
     a$.complete();
     b$.next(VALUE_2);
 
-    expect(subscribe).toBeCalledTimes(0);
+    expect(subscribe).toBeCalledTimes(1);
+    expect(complete).toBeCalledTimes(0);
+
+    b$.complete();
+
     expect(complete).toBeCalledTimes(1);
   });
 });
