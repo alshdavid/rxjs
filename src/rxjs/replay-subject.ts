@@ -12,6 +12,7 @@ export class ReplaySubject<T = any> extends Subject<T> {
 
   subscribe(callback: Callback<[T]> = noop, error: Callback<[T]> = noop, complete: Callback<[]> = noop) {
     this._buffer.forEach((v) => callback(v));
+    this._buffer = [];
     return super.subscribe(callback, error, complete);
   }
 
